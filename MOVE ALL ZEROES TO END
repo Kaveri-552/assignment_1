@@ -1,0 +1,9 @@
+n = int(input("Enter number of elements: "))
+arr = []
+for i in range(n):
+    num = int(input(f"Enter element {i+1}: "))
+    arr.append(num)
+result = [x for x in arr if x != 0]
+result.extend([0] * arr.count(0))
+
+print("After moving zeroes to end:", result)
